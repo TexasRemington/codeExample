@@ -1,0 +1,7 @@
+<% include ../partials/header %>
+
+  <% for (var i=0, x=contacts.length; i<x; i++) { %>
+    <p>Name: <a href="/contacts/<%= contacts[i]._id %>"><%= contacts[i].firstName %> <%= contacts[i].lastName %></a></p>
+  <% } %>
+
+<% include ../partials/footer %>

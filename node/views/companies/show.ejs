@@ -1,0 +1,12 @@
+<% include ../partials/header %>
+
+  <h1><%= title %></h1>
+  <h1><%= company.name %></h1>
+  <h2>Email Format: <%= company.emailFormat %></h2>
+  <h2>Date Created: <%= company.dateCreated %></h2>
+
+  <ul>
+    <li><a href="/companies/<%= company._id %>/contacts">See contacts for this company</a></li>
+  </ul>
+
+<% include ../partials/footer %>

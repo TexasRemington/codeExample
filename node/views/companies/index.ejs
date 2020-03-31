@@ -1,0 +1,10 @@
+<% include ../partials/header %>
+
+  <h1><%= title %></h1>
+  <ul>
+    <% for (var i=0, x=companies.length; i<x; i++) { %>
+      <li><a href="/companies/<%= companies[i]._id %>"><%= companies[i].name %></a></li>
+    <% } %>
+  </ul>
+
+<% include ../partials/footer %>
